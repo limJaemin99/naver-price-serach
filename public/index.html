@@ -121,13 +121,13 @@
     <div class="grid row3" style="margin-top:14px">
       <div>
         <label for="query">검색어 (상품명)</label>
-        <input id="query" type="text" placeholder="예: 비타민D 2000IU" value="비타민D" />
+        <input id="query" type="text" placeholder="예: 비타민D 2000IU" value="" />
       </div>
       <div>
         <label for="sort">정렬</label>
         <select id="sort">
+	  <option value="asc">최저가 · 가격 낮은순 (asc)</option>
           <option value="sim">정확도순 (sim)</option>
-          <option value="asc">가격 낮은순 (asc) · 최저가</option>
           <option value="dsc">가격 높은순 (dsc)</option>
           <option value="date">날짜순 (date)</option>
         </select>

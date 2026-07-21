@@ -1,6 +1,13 @@
-# Cloudflare Pages 설정
-# - pages_build_output_dir: 정적 자산(HTML) 폴더
-# - functions/ 폴더는 이 파일과 같은 위치에서 자동으로 인식되어 라우트가 됩니다.
-name = "naver-shop-test"
-pages_build_output_dir = "public"
+# Cloudflare Worker 설정 (정적 자산 + API 프록시)
+# - main    : Worker 엔트리 (라우팅 담당)
+# - [assets]: public/ 를 정적 자산으로 서빙. env.ASSETS 로 접근.
+#
+# ⚠️ name 은 배포될 Worker 이름입니다. Cloudflare 대시보드의 Worker 이름과
+#    반드시 일치해야 합니다. 다르면 아래 값을 대시보드 이름으로 바꾸세요.
+name = "naver-price-serach"
+main = "src/index.js"
 compatibility_date = "2025-01-01"
+
+[assets]
+directory = "./public"
+binding = "ASSETS"

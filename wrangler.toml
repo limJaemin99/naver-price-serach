@@ -1,0 +1,6 @@
+# Cloudflare Pages 설정
+# - pages_build_output_dir: 정적 자산(HTML) 폴더
+# - functions/ 폴더는 이 파일과 같은 위치에서 자동으로 인식되어 라우트가 됩니다.
+name = "naver-shop-test"
+pages_build_output_dir = "public"
+compatibility_date = "2025-01-01"

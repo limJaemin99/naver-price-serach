@@ -1,0 +1,13 @@
+{
+  "name": "naver-shop-test-cloudflare",
+  "version": "1.0.0",
+  "private": true,
+  "description": "네이버 쇼핑 검색 API 테스트 페이지 + 프록시 (Cloudflare Pages 배포용)",
+  "scripts": {
+    "dev": "wrangler pages dev",
+    "deploy": "wrangler pages deploy"
+  },
+  "devDependencies": {
+    "wrangler": "^3.99.0"
+  }
+}
